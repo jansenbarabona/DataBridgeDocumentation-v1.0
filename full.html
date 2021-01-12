@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DataBridge Documentation</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="DataBridge Documentation">
+    <meta name="author" content="DataBridge Asia Inc">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.min.css">
+</head>
+
+
+<body class="docs-page">
+    <header id="header" class="header fixed-top"></header>
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <nav id="docs-nav" class="docs-nav navbar">
+            </nav>
+        </div>
+        <div id="docs-content" class="docs-content"></div>
+
+        <!-- Javascript -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/plugins/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <!-- Page Specific JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+        <script src="assets/js/highlight-custom.js"></script>
+        <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src="assets/js/docs.min.js"></script>
+
+        <script src="jquery.includeHTML.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#header').loadHTML('_Layouts/header.html');
+                $('#docs-nav').loadHTML('_Layouts/sidebar.html');
+                $('.docs-content').loadHTML('_layouts/body.html');
+            })
+        </script>
+</body>
+
+</html>
